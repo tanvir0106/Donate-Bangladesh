@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladeh</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header class="sticky-element z-5 top-0 bg-white/50 backdrop-blur-lg p-4">
+        <div class="flex justify-center lg:hidden md:hidden ">
+            <a class="btn btn-ghost font-bold text-xl">Donate Bangladesh</a>
+        </div>
+        <div class="navbar lg:px-8 bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                   <a href="blog.html"> <button tabindex="0" role="button" class="btn btn-ghost lg:text-xl lg:px-9 bg-[#B4F461]">
+                        Blog
+                    </button></a>
+
+                </div>
+            </div>
+            <div class="navbar-center">
+                <a class="btn btn-ghost font-bold hidden lg:flex md:flex text-2xl">Donate Bangladesh</a>
+            </div>
+            <div class="navbar-end">
+
+                <button class=" lg:text-2xl lg:px-9 ">
+                    <div class="badge rounded-sm font-bold text-lg  p-4"><i
+                            class="fa-solid fa-circle-dollar-to-slot  mr-2 text-[#FFD700]"></i><span class="mr-2"
+                            id="my-bal">9999999999</span> BDT</div>
+                </button>
+            </div>
+        </div>
+        <section>
+            <div role="tablist" class="tabs flex justify-center bg-none">
+                <button id="donation" role="tab"
+                    class=" bg-[#B4F461]  tab rounded-lg border-2 border-solid border-black m-2 w-52 h-14 font-bold text-2xl p-2 ">Donation</button>
+                <button id="history" role="tab"
+                    class="tab rounded-lg border-2 border-solid border-black m-2 w-52 h-14 font-bold text-2xl p-2 ">Histroy</button>
+
+
+            </div>
+        </section>
+    </header>
+    <main class="z-1">
+        <dialog id="my_modal_2" class="modal flex justify-center">
+            <div class="modal-box">
+                <h3 class="text-4xl flex justify-center font-bold">Congrats!</h3>
+                <div class=" flex my-4 justify-center"> <i
+                        class="fa-solid  fa-circle-dollar-to-slot text-7xl mr-2 text-[#FFD700]"></i></div>
+
+
+                <p class=" text-xl flex justify-center">You Have Donated foe Humankind</p>
+                <h1 class="text-2xl flex justify-center font-bold"> Succesfully</h1>
+            </div>
+            <form method="dialog" class="modal-backdrop flex justify-center">
+                <button>close</button>
+            </form>
+            <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </form>
+            </div>
+        </dialog>
+
+        <section class="lg:mx-16" id="donate-page">
+            <div class="hero">
+                <div class="hero-content flex-col lg:my-4  lg:flex-row">
+
+                    <img src="assets/noakhali.png" class=" lg:w-2/5 h-full rounded-lg shadow-2xl" />
+                    <div class="lg:w-3/5">
+                        <div class="badge rounded-sm bg-base-200 p-4"><i
+                                class="fa-solid fa-circle-dollar-to-slot mr-2 text-[#FFD700]"></i> <span class="mr-2"
+                                id="noakhli-bal">33339</span> BDT</div>
+                        <h1 class="lg:text-5xl text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+                        <p class="py-6">
+                            The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
+                            donation will help provide essential supplies and to those affected by this disaster. Every
+                            contribution, big or small, makes difference. Please join us in supporting the relief
+                            efforts and making a positive impact on the lives of those in need.
+                        </p>
+                        <input id="noakhali-form" class="w-full h-12 m-1 p-2 border-2 border-base-600"
+                            placeholder="Write Donation Amount" "mopney" type="text">
+                        <button id="noakhali-donate" class="btn bg-[#B4F461] flex justify-start"></i>Donate Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="hero">
+                <div class="hero-content flex-col lg:my-4   lg:flex-row">
+                    <img src="assets/feni.png" class=" lg:w-2/5 h-full rounded-lg shadow-2xl" />
+                    <div class="lg:w-3/5">
+                        <div class="badge rounded-sm bg-base-200 p-4"><i
+                                class="fa-solid fa-circle-dollar-to-slot mr-2 text-[#FFD700]"></i> <span class="mr-2"
+                                id="feni-bal">10009</span> BDT</div>
+                        <h1 class="lg:text-5xl text-xl  font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
+                        <p class="py-6">
+                            The recent floods in Feni have devastated local communities, leading to severe disruption
+                            and loss. Your generous donation will help provide immediate aid, including food, clean
+                            water, and medical supplies, to those affected by this calamity. Together, we can offer
+                            crucial support and help rebuild lives in the aftermath of this disaster. Every contribution
+                            counts towards making a real difference. Please consider donating today to assist those in
+                            urgent need.
+                        </p>
+                        <input id="feni-form" class="w-full h-12 m-1 p-2 border-2 border-base-600"
+                            placeholder="Write Donation Amount" "mopney" type="text">
+                        <button id="feni-donate" class="btn bg-[#B4F461] flex justify-start"></i>Donate Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="hero">
+                <div class="hero-content flex-col lg:my-4  lg:flex-row">
+                    <img src="assets/quota-protest.png" class=" lg:w-2/5 h-full rounded-lg shadow-2xl" />
+                    <div class="lg:w-3/5">
+                        <div class="badge rounded-sm bg-base-200 p-4"><i
+                                class="fa-solid fa-circle-dollar-to-slot mr-2 text-[#FFD700]"></i> <span class="mr-2"
+                                id="qouta-bal">5709</span> BDT</div>
+                        <h1 class="lg:text-5xl text-xl font-bold">Aid for Injured in the Quota Movement</h1>
+                        <p class="py-6">
+                            The recent Quota movement has resulted in numerous injuries and significant hardship for
+                            many individuals. Your support is crucial in providing medical assistance, rehabilitation,
+                            and necessary supplies to those affected. By contributing, you help ensure that injured
+                            individuals receive the care and support they need during this challenging time. Every
+                            donation plays a vital role in alleviating their suffering and aiding in their recovery.
+                            Please consider making a donation to support these brave individuals in their time of need.
+                        </p>
+                        <input id="qouta-form" class="w-full h-12 m-1 p-2 border-2 border-base-600"
+                            placeholder="Write Donation Amount" "mopney" type="text">
+                        <button id="qouta-donate" class="btn bg-[#B4F461] flex justify-start"></i>Donate Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mx-28 hidden" id="history-page">
+
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+<style>
+    .sticky-element {
+      position: sticky;
+      top: 0; /* Stick to the top of the viewport */
+      background-color: white;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 10;
+    }
+  </style>
+</html>
